@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/main_menu_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_bar_height" android:baselineAligned="false" android:weightSum="5.0" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.linj.album.view.FilterImageView android:layout_gravity="center" android:id="@id/btn_thumbnail" android:background="@drawable/thumbnail_bg" android:padding="0.5dip" android:layout_width="@dimen/thumbnail_imageview_size" android:layout_height="@dimen/thumbnail_imageview_size" android:scaleType="centerCrop" android:contentDescription="@string/app_name" />
+        <ImageView android:layout_gravity="center" android:id="@id/videoicon" android:focusable="false" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/btn_play_vedio" android:scaleType="fitXY" />
+    </FrameLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:id="@id/btn_shutter_record" android:background="@drawable/btn_shutter_record" android:layout_width="@dimen/shutter_bottom_size" android:layout_height="@dimen/shutter_bottom_size" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+        <ImageButton android:id="@id/btn_shutter_camera" android:background="@drawable/btn_shutter_camera" android:layout_width="@dimen/shutter_bottom_size" android:layout_height="@dimen/shutter_bottom_size" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:id="@id/btn_switch_mode" android:background="@drawable/ic_switcher_menu_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_switch_camera" android:scaleType="center" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+</LinearLayout>

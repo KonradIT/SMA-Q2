@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff454a4b" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:background="#ff303537" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:id="@id/ll_back" android:paddingLeft="10.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tpl_title_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/tpl_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ffcfcfcf" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tpl_sign_user_info" android:layout_toRightOf="@id/ll_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffcfcfcf" android:id="@id/tv_ensure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/tpl_sign_up" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#ff1a1c1d" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

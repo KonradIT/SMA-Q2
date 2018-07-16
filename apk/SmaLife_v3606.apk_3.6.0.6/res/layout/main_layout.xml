@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:sat="http://schemas.android.com/res/android.view.ext">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/menu" android:visibility="gone" layout="@layout/menu_layout" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/bottom_layout" android:background="@drawable/bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sport_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/sport_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/sport_selector" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/sport_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sport_item" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sleep_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/sleep_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sleep_selector" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/sleep_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_item" android:layout_weight="0.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/action_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/action_selector" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/notic_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/notic_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/notic_selector" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/notic_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notic_item" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/setting_item" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/setting_btn" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/setting_selector" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/setting_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_item" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

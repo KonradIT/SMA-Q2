@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.smalife.watch" platformBuildVersionCode="19" platformBuildVersionName="4.4.2-1456859">
+    <instrumentation android:label="unit test application!" android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.smalife.watch"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.sma.watch"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <permission android:name="getui.permission.GetuiService.com.sma.watch" android:protectionLevel="normal"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.smalife.MyApplication" android:persistent="true" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <uses-library android:name="android.test.runner"/>
+        <service android:name="com.smalife.NotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="AkkTkmY1HKEIObkAA4fGvGzS"/>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1104666598"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.smalife.activity.LeadingActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.sharesdk.framework.ShareSDKUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.smalife.BaseMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.country.CountryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.country.Country2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SportTrackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.RankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SportTrackSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.NotDisturbActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SportTrackListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HeartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HeartDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HeartRateSetActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.smalife.activity.NoDisturbSetActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.smalife.activity.NoDisturbActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.smalife.activity.HeartDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SportHeartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.MessageSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SetSmaQActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.smalife.activity.UpdateHelper" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.SatelliteMenuActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.share.ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.BaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HeaderSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.SleepActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="standard" android:name="com.smalife.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.SportActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.SportDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.BondActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.UnBondActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.smalife.activity.PairActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.NoticActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.BondResultActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.ClockSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.SportAimActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.LongSitActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light"/>
+        <activity android:name="com.smalife.activity.UserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.smalife.camera.AlbumAty" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.smalife.camera.AlbumItemAty" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.camera.CameraAty" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.ClockListActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.SleepDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="com.smalife.activity.InputActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HelpActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.RetPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.smalife.activity.PairedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.smalife.activity.HelloCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="PUSH_APPID" android:value="CIIWiy5muG7KzdFMsTzgV1"/>
+        <meta-data android:name="PUSH_APPKEY" android:value="X5QFg0R3Oc6VyL9oq7clU6"/>
+        <meta-data android:name="PUSH_APPSECRET" android:value="u36FSTKbMN6QpbAsuxtyk7"/>
+        <meta-data android:name="PUSH_GROUPID" android:value=""/>
+        <receiver android:exported="false" android:name="com.smalife.PushReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.CIIWiy5muG7KzdFMsTzgV1"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice"/>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.igexin.sdk.PushManagerReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.igexin.download.DownloadService" android:process=":pushservice"/>
+        <receiver android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="downloads.com.sma.watch" android:name="com.igexin.download.DownloadProvider" android:process=":pushservice"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.getuiext.activity.GetuiExtActivity" android:process=":pushservice" android:taskAffinity="android.task.myServicetask" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="false" android:name="com.igexin.getuiext.service.PayloadReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4"/>
+                <action android:name="com.igexin.sdk.action.CIIWiy5muG7KzdFMsTzgV1"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.igexin.getuiext.service.GetuiExtService" android:process=":pushservice"/>
+        <receiver android:name="com.smalife.ClickBroadCastReceiver">
+            <intent-filter>
+                <action android:name="matchAsk_Agree"/>
+                <action android:name="matchAsk_NAgree"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.smalife.LocalBroadCastListener">
+            <intent-filter>
+                <action android:name="InteractActionString"/>
+                <action android:name="localAction"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.smalife.SMSReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.smalife.ble.BlueToothService"/>
+        <provider android:authorities="com.sma.app.provider" android:exported="true" android:name="com.smalife.db.SmaContentProvider"/>
+        <receiver android:name="com.smalife.BootCompletedReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.sma.service.destroy"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.smalife.Alarmreceiver">
+            <intent-filter>
+                <action android:name="arui.alarm.action"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.smalife.UploadDataReceiver">
+            <intent-filter>
+                <action android:name="android.alarm.logs.action"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.umeng.message.NotificationProxyBroadcastReceiver"/>
+        <receiver android:name="com.umeng.message.SystemReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.MessageReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.ElectionReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4"/>
+                <category android:name="umeng"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.umeng.message.RegistrationReceiver">
+            <intent-filter>
+                <action android:name="com.smalife.watch.intent.action.COMMAND"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.BootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="PushService" android:name="com.umeng.message.UmengService" android:process=":push">
+            <intent-filter>
+                <action android:name="com.smalife.watch.intent.action.START"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.smalife.watch.intent.action.COCKROACH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4"/>
+                <category android:name="umeng"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" android:process=":push"/>
+        <service android:exported="true" android:name="com.umeng.message.UmengMessageIntentReceiverService" android:process=":push">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.android.agoo.client.ElectionReceiverService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengDownloadResourceService"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="55cdc1eb67e58e1486002df2"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="a350e39e07a42e9f93439922ac092420"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="sma"/>
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService"/>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.smalife.wx.receiver.UploadMacToWXReceiver">
+            <intent-filter>
+                <action android:name="ACTION_UPLOAD_MAC_WX"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.smalife.DownLoadDataService"/>
+        <service android:exported="true" android:name="com.smalife.no.DfuBaseService">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.smalife.upgrade.ble.service.DFUService"/>
+        <service android:enabled="true" android:name="com.smalife.upgrade.ble.service.DFUBaseService"/>
+    </application>
+</manifest>

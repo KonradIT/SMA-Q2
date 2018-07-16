@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/sport_title_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heart_sport_rate" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.smalife.utils.HeartChartView android:gravity="center" android:id="@id/sport_heart_line_chart" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="#ffdcdcdc" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/max_rate" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:id="@id/sport_heart_max_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="128bpm" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mean_rate" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:id="@id/sport_heart_mean_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="74bpm" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quite_rate" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:id="@id/sport_heart_quit_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="66bpm" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:background="@drawable/sport_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart_strenuous" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/heart_strenuous" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff323232" android:gravity="right" android:id="@id/sport_heart_strenuous" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="32" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff323232" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/heart_min" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart_anaerobic" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/heart_anaerobic" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff323232" android:gravity="right" android:id="@id/sport_heart_anaerobic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="54" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff323232" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/heart_min" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart_aerobic" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/heart_aerobic" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff323232" android:gravity="right" android:id="@id/sport_heart_aerobic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="21" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff323232" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/heart_min" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart_consumption" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/heart_consumption" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff323232" android:gravity="right" android:id="@id/sport_heart_consumption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="127" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff323232" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/heart_min" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/heart_warm_up" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/heart_warm_up" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="#ff323232" android:gravity="right" android:id="@id/sport_heart_warm_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09" android:layout_weight="0.0" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff323232" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/heart_min" android:layout_weight="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

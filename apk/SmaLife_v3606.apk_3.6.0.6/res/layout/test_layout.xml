@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/init" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="初始化" />
+    <Button android:id="@id/register_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注册" />
+    <Button android:id="@id/register_btn_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="注册2" />
+    <Button android:id="@id/login_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登录1" />
+    <Button android:id="@id/login_btn_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登录2" />
+    <Button android:id="@id/sendmsg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="好友请求" />
+    <Button android:id="@id/unbond" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解除绑定" />
+    <Button android:id="@id/update_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更新用户信息" />
+    <Button android:id="@id/login_out" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退出" />
+</LinearLayout>

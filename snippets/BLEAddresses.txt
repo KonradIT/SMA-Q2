@@ -1,0 +1,29 @@
+ public static class Uuid
+  {
+    public static final UUID BATTERY_LEVEL_CHARACTERISTIC;
+    public static final UUID BATTERY_SERVICE;
+    public static final UUID CCCD = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb");
+    public static final UUID DEVICE_SERVICE = UUID.fromString("0000180a-0000-1000-8000-00805f9b34fb");
+    public static final UUID DEVICE_VERSION = UUID.fromString("00002a26-0000-1000-8000-00805f9b34fb");
+    public static final UUID HARDWARE_VERSION = UUID.fromString("00002a27-0000-1000-8000-00805f9b34fb");
+    public static final UUID RX_CHAR_UUID;
+    public static final UUID RX_SERVICE_UUID;
+    public static final UUID WX_CHAR_UUID;
+    
+    static
+    {
+      BATTERY_SERVICE = UUID.fromString("0000180F-0000-1000-8000-00805f9b34fb");
+      BATTERY_LEVEL_CHARACTERISTIC = UUID.fromString("00002A19-0000-1000-8000-00805f9b34fb");
+      RX_SERVICE_UUID = UUID.fromString("6e400001-b5a3-f393-e0a9-e50e24dcca9e");
+      WX_CHAR_UUID = UUID.fromString("6e400002-b5a3-f393-e0a9-e50e24dcca9e");
+      RX_CHAR_UUID = UUID.fromString("6e400003-b5a3-f393-e0a9-e50e24dcca9e");
+    }
+  }
+
+{
+  public static final UUID RX_CHAR_UUID = UUID.fromString("6e400003-b5a3-f393-e0a9-e50e24dcca9e");
+  public static final UUID RX_SERVICE_UUID = UUID.fromString("6e400001-b5a3-f393-e0a9-e50e24dcca9e");
+  private static final String TAG = "OTAManager";
+  public static final UUID WX_CHAR_UUID = UUID.fromString("6e400002-b5a3-f393-e0a9-e50e24dcca9e");
+
+

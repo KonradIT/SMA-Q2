@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/sleep_title_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_title" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sleep_blue" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ImageButton android:id="@id/pre_day" android:background="@null" android:paddingLeft="25.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/left_btn_selector" android:layout_weight="0.0" />
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/sleep_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/next_day" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_btn_selector" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/sleep_detail_layout" android:background="@drawable/sleep_cricl_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+            <TextView android:textColor="@color/sleep_color" android:gravity="center_vertical" android:id="@id/fall_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/sleep_des" />
+            <TextView android:textSize="28.0sp" android:textColor="@color/sleep_color" android:gravity="center" android:id="@id/fall_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sport_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_quality" android:layout_weight="1.0" />
+                    <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/sleep_quality" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/sleep_bad" android:layout_weight="1.0" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/sport_line" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deep_sleep" android:drawableLeft="@drawable/sleep_deep_icon" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/deep_long" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/light_sleep" android:drawableLeft="@drawable/sleep_tint_icon" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/tint_long" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clear_time" android:drawableLeft="@drawable/sleep_weakup" android:layout_weight="1.0" />
+                    <TextView android:textSize="12.0sp" android:gravity="right" android:id="@id/wake_times" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

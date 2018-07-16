@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/alert_dialog_bg" android:layout_width="280.0dip" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/clock_setting_item_press" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_dialog_dialer" android:layout_weight="0.0" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/alert_title" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:gravity="center|left" android:background="@android:color/white" android:paddingLeft="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:text="@string/alert_msg" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:background="@drawable/clock_setting_item_press" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cancel_btn" android:background="@drawable/submit_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="0.100000024dip" android:text="@string/not_put_on" android:layout_weight="1.0" />
+        <Button android:id="@id/submit_btn" android:background="@drawable/submit_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="0.100000024dip" android:text="@string/put_on" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

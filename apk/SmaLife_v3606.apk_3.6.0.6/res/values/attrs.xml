@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="animat_id" format="integer" />
+    <attr name="focus_focusing_id" format="integer" />
+    <attr name="focus_success_id" format="integer" />
+    <attr name="focus_fail_id" format="integer" />
+    <attr name="wheel_size" format="integer" />
+    <attr name="pointer_size" format="integer" />
+    <attr name="max" format="integer" />
+    <attr name="show_text" format="boolean" />
+    <attr name="start_angle" format="integer" />
+    <attr name="end_angle" format="integer" />
+    <attr name="text_size" format="integer" />
+    <attr name="init_position" format="integer" />
+    <attr name="color_seekbar" format="string" />
+    <attr name="wheel_active_color" format="string" />
+    <attr name="wheel_unactive_color" format="string" />
+    <attr name="pointer_color" format="string" />
+    <attr name="pointer_halo_color" format="string" />
+    <attr name="text_color" format="string" />
+    <attr name="themeColor" format="color" />
+    <attr name="isOpen" format="boolean" />
+    <attr name="shape">
+        <enum name="circle" value="2" />
+        <enum name="rect" value="1" />
+    </attr>
+    <attr name="gravity">
+        <enum name="center" value="17" />
+        <enum name="left" value="3" />
+        <enum name="right" value="5" />
+    </attr>
+    <attr name="textSize" format="dimension" />
+    <attr name="textColorOut" format="color" />
+    <attr name="textColorCenter" format="color" />
+    <attr name="dividerColor" format="color" />
+</resources>

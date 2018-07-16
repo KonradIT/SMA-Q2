@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/pair_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pair_title" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/unbond_btn" android:background="@drawable/pair_bond_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pair_bond_id" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:background="@drawable/pair_bg" android:layout_width="fill_parent" android:layout_height="288.0dip">
+        <ImageView android:gravity="center" android:id="@id/pair_ainmation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@anim/pair_animation" android:layout_alignParentBottom="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="140.0dip" android:layout_marginTop="82.0dip" android:src="@drawable/pair_bond_heart" android:layout_alignTop="@id/pair_ainmation" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/pair_bond_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <TextView android:textColor="@color/paired_color" android:id="@id/boy_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="65.0dip" android:text="@string/paired_boy_name" android:layout_centerVertical="true" />
+            <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pair_bond_double_heart" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/paired_color" android:id="@id/girl_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="65.0dip" android:text="@string/paired_girl_name" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/dialog_layout" android:background="@drawable/paired_unbond" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/paired_btn" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/pair_result" android:background="@null" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/paired_unbond" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textColor="@color/paired_btn" android:id="@id/cancel_btn" android:background="@drawable/paired_btn_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/unbond_cancel" android:layout_weight="1.0" />
+                <Button android:textColor="@color/paired_btn" android:id="@id/submit_btn" android:background="@drawable/paired_btn_selector" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/unbond_confirm" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

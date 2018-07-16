@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/clock_setting_item" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:gravity="center_vertical" android:id="@id/week_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/check_btn" android:background="@drawable/check_btn_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#ff454a4b" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:background="#ff303537" android:layout_width="fill_parent" android:layout_height="48.0dip" android:baselineAligned="false">
+        <LinearLayout android:id="@id/ll_back" android:paddingLeft="9.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/smssdk_back_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/smssdk_sharesdk_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/llTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="20.0sp" android:textColor="#ffcfcfcf" android:layout_gravity="center_vertical" android:id="@id/tv_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/smssdk_choose_country" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/ivSearch" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/smssdk_search_icon" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/llSearch" android:background="@drawable/smssdk_input_bg_focus" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/smssdk_search_icon" android:scaleType="centerInside" />
+            <EditText android:textColor="#ffffffff" android:layout_gravity="center_vertical" android:id="@id/et_put_identify" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/smssdk_search" android:singleLine="true" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_clear" android:background="@drawable/smssdk_clear_search" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ff1a1c1d" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

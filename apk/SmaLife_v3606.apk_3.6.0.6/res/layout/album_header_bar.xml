@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header_bar_navi" android:background="@color/common_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/album_header_bar_height">
+        <ImageView android:id="@id/header_bar_back" android:paddingLeft="@dimen/title_view_left_back_padding_left" android:paddingRight="@dimen/title_view_left_back_padding_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_back_02_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/primary_title_text_color" android:id="@id/header_bar_album_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:text="@string/album_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@drawable/title_text_selector" android:gravity="center" android:id="@id/header_bar_enter_selection" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/album_enter_select" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/header_bar_select" android:background="@color/common_title_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/album_header_bar_height">
+        <TextView android:textSize="17.0sp" android:textColor="@drawable/title_text_selector" android:gravity="center" android:id="@id/header_bar_leave_selection" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/api_cancel" android:singleLine="true" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ffe8e8e8" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/header_bar_select_counter" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="19.0sp" android:textColor="@color/primary_title_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="@string/album_photo_select_tip" />
+        </LinearLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@drawable/title_text_selector" android:gravity="center" android:id="@id/select_all" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/album_phoot_select_all" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/heart_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:id="@id/heart_time" android:text="@string/recent_monitor_date" style="@style/HeartDetailsListViewItemStyle" />
+        <TextView android:textSize="16.0sp" android:text="@string/quite_resting" style="@style/HeartDetailsListViewItemStyle" />
+    </LinearLayout>
+</LinearLayout>

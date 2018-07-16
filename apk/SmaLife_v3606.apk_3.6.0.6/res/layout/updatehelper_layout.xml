@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/notic_title" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/firmware_upgrade_info" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/submit_btn" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/clock_add_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/update_helper" />
+</LinearLayout>

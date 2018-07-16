@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/clock_item_bg" android:paddingLeft="38.0dip" android:paddingRight="38.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="35.0sp" android:textColor="@android:color/holo_red_light" android:id="@id/clock_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="00:00" android:layout_weight="1.0" />
+        <CheckBox android:id="@id/clock_check" android:background="@drawable/disturb_btn_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <TextView android:gravity="center|left" android:id="@id/sun_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sun_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/mon_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mon_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/tues_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tues_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/wednes_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wes_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/thur_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/thur_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/frid_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frid_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/sta_day" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sta_day" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/item_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

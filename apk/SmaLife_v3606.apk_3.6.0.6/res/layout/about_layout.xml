@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/setting_title_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="middle" android:gravity="right" android:id="@id/contact_customer_service" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="@string/contact_service" android:maxEms="12" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/about_us" />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/register_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/register_header_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:paddingRight="25.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sma_logo" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/header_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/header" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/input_information_bg" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <EditText android:gravity="center" android:id="@id/nick_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="35.0dip" android:hint="@string/input_name" android:drawableBottom="@drawable/user_split_line" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/birthday_ic" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/age" />
+            <EditText android:textSize="12.0sp" android:gravity="center|left" android:id="@id/age" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:numeric="integer" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_split_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/sex_ic" />
+                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sex" />
+                <TextView android:enabled="false" android:textSize="12.0sp" android:gravity="center|left" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="35.0dip" android:text="@string/sex" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip">
+                    <RadioButton android:textSize="12.0sp" android:id="@id/man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/man_radio_selector" />
+                    <RadioButton android:textSize="12.0sp" android:id="@id/woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:button="@drawable/woman_radio_selector" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_split_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/high_ic" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hight" />
+            <EditText android:textSize="12.0sp" android:gravity="center|left" android:id="@id/high" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:numeric="integer" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:id="@id/high_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hight_unit" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_split_line" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/weight_ic" />
+            <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weight" />
+            <EditText android:textSize="12.0sp" android:gravity="center|left" android:id="@id/weight" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:numeric="integer" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:id="@id/weight_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/weight_unit" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_split_line" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_width="25.0dip" android:layout_height="wrap_content" android:src="@drawable/unit" />
+                <TextView android:textSize="12.0sp" android:gravity="center|left" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:text="@string/info_unit" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center|right" android:orientation="horizontal" android:id="@id/unit_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_weight="0.0">
+                <TextView android:textSize="13.0sp" android:id="@id/metric_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/metric_unit" />
+                <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" />
+                <TextView android:textSize="13.0sp" android:id="@id/inch_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/imperial_unit" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textColor="@android:color/white" android:id="@id/next_btn" android:background="@drawable/next_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip" android:text="@string/next" />
+</LinearLayout>

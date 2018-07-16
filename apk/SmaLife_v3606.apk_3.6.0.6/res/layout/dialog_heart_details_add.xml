@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/chat_talk_delete" android:layout_width="300.0dip" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:gravity="left" android:paddingLeft="5.0dip" android:text="@string/quite_rate" style="@style/HeartDetailsDialogTitleStyle" />
+            <TextView android:gravity="right" android:id="@id/date" android:paddingRight="5.0dip" android:text="2015/12/12" style="@style/HeartDetailsDialogTitleStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="7.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+            <EditText android:id="@id/heart_value" android:background="@drawable/weight_item_bg" android:layout_width="255.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:numeric="integer" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bpm" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:id="@id/cancel" android:text="@string/cancel" style="@style/HeartDetailsDialogTextViewStyle" />
+            <TextView android:id="@id/confirm" android:text="@string/submit" style="@style/HeartDetailsDialogTextViewStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

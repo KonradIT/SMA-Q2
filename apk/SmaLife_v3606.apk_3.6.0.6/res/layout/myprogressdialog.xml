@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#e0000000" android:layout_width="120.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/progressdialog_title" android:singleLine="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/progress_imageview1" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/progress_image2" />
+        <ImageView android:id="@id/progress_imageview2" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/progress_image1" />
+        <ImageView android:id="@id/progress_imageview3" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/progress_image1" />
+        <ImageView android:id="@id/progress_imageview4" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/progress_image1" />
+        <ImageView android:id="@id/progress_imageview5" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/progress_image1" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/textviewProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dfu_uploading_percentage_label" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/main_menu_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_menu_bar_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+    </RelativeLayout>
+    <View android:layout_width="44.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/btn_switch_camera" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_camera_top_bar_sw_camera" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/btn_flash_mode" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="@drawable/btn_flash_on" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+    <ImageView android:id="@id/btn_other_setting" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_camera_top_bar_setting" android:layout_weight="1.0" android:contentDescription="@string/app_name" />
+</LinearLayout>

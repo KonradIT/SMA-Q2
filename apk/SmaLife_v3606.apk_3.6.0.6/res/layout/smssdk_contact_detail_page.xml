@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/smssdk_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" layout="@layout/smssdk_title_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/smssdk_corners_bg_nor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip">
+        <ImageView android:id="@id/iv_contact_icon" android:background="@drawable/smssdk_default_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_margin="8.0dip" android:scaleType="fitCenter" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/tv_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smssdk_contacts_phones" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/tv_contact_phones" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff5c5c5c" android:gravity="center_horizontal" android:id="@id/tv_invite_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="16.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btn_invite" android:background="@drawable/smssdk_btn_enable" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="16.0dip" android:text="@string/smssdk_send_invitation" />
+</LinearLayout>

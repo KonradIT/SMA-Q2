@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:camera="http://schemas.android.com/apk/res-auto">
+    <com.linj.camera.view.CameraView android:id="@id/cameraView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linj.camera.view.TempImageView android:id="@id/tempImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.linj.camera.view.FocusImageView android:id="@id/focusImageView" android:layout_width="75.0dip" android:layout_height="75.0dip" camera:focus_focusing_id="@drawable/focus_focusing" camera:focus_success_id="@drawable/focus_focused" camera:focus_fail_id="@drawable/focus_focus_failed" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/recordInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginRight="25.0dip" android:drawableLeft="@drawable/icon_rec" android:drawablePadding="8.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/waterMark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/thumb_guide_tips_new" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <SeekBar android:id="@id/zoomSeekBar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,26 @@
+# SMA Q2/TIME Smartwatch FW research + App mods/dissasembly/GB port
+
+Possible candidate for Pebble replacement.
+
+- specs:
+	- Bluetooth Version: Bluetooth 4.0
+	- Built-in chip type: ARM Cortex M4
+	- RAM: 64K
+	- ROM: 512K
+	- Battery Capacity: 200mAh 
+	- Screen resolution: 128 x 128 
+- src:
+	- https://wiki.hackerspace.pl/projects:sma-q2
+	- https://hackaday.io/project/85463-color-open-source-smartwatch
+	- http://4pda.ru/forum/lofiversion/index.php?t788804-1060.html
+	- https://forum.xda-developers.com/smartwatch/other-smartwatches/sma-q2-time-smart-watch-t3531740/
+	- https://owncloud.hackerspace.pl/index.php/s/1bqTRwMI8XKXGKL
+	- https://fir.im/sma
+	- https://4pda.ru/forum/index.php?showtopic=788804
+	- https://w3bsit3-dns.com/forum/index.php?showtopic=788804&st=700
+
+Source tree:
+
+apk 	 = SMA apk reveng
+fw	 = firmware reveng
+snippets = random snippets

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/item_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_weight="0.0" />
+    <ImageView android:id="@id/header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/rank_item_header" android:layout_weight="0.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/names" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="hogan.li" android:layout_alignParentLeft="true" />
+            <TextView android:id="@id/steps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13825" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="7.5dip" android:max="100" android:progress="80" android:progressDrawable="@drawable/progressbar" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <ImageView android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/goto_icon" android:layout_weight="0.0" />
+</LinearLayout>

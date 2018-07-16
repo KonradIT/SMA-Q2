@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/ble_connect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Connect" />
+    <Button android:id="@id/ble_disconnect" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Disconnect" />
+    <Button android:id="@id/bond_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="bond" />
+    <Button android:id="@id/login_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="UserLogin" />
+    <Button android:id="@id/SystemTime_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SystemTime" />
+    <Button android:id="@id/clock_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="ClockTime" />
+    <Button android:id="@id/clock_list_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="闹钟列表" />
+    <Button android:id="@id/sync_Open_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="实时同步开启" />
+    <Button android:id="@id/sync_Close_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="实时同步关闭" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/qzone_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="QQ" android:layout_weight="1.0" />
+        <Button android:id="@id/sina_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="新浪" android:layout_weight="1.0" />
+        <Button android:id="@id/wechat_bnt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="微信" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

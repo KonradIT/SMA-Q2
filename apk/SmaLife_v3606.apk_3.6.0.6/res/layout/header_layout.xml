@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/register_header_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sma_logo" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/btn_share" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

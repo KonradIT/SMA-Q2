@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/week_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:layout_weight="1.0" />
+    <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:id="@id/cancel_btn" android:background="@drawable/clock_cancel_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/submit_btn" android:background="@drawable/clock_submit_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/submit" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

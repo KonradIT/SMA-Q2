@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CheckBoxStyle">
+        <item name="android:layout_width">28.0dip</item>
+        <item name="android:layout_height">28.0dip</item>
+        <item name="android:layout_marginRight">20.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="video_detail_player_bottom_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="video_detail_player">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="CommonDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/smssdk_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="header_title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="user_list">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:height">35.0dip</item>
+        <item name="android:width">220.0dip</item>
+    </style>
+    <style name="back_btn_style">
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="step_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/step_seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/step_thumb</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="dis_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/dis_seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/dis_thumb</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="colories_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/colories_seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/colories_thumb</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="sleep_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">8.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/sleep_seekbar_horizontal</item>
+        <item name="android:minHeight">8.0dip</item>
+        <item name="android:thumb">@drawable/sleep_thumb</item>
+        <item name="android:thumbOffset">0.0dip</item>
+    </style>
+    <style name="longsit_seekbar" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">5.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/longsit_seekbar_horizontal</item>
+        <item name="android:minHeight">5.0dip</item>
+        <item name="android:thumb">@drawable/long_thumb</item>
+        <item name="android:thumbOffset">2.5dip</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@drawable/alert_dialog_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="WhiteDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_white_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="loadingprogressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="DeleteDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="HeartDetailsListViewItemStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="HeartDetailsDialogTextViewStyle" parent="@style/HeartDetailsListViewItemStyle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="HeartDetailsDialogTitleStyle" parent="@style/HeartDetailsDialogTextViewStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="HeartRateSetWeekLayoutStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/clock_item_selector</item>
+        <item name="android:paddingLeft">35.0dip</item>
+        <item name="android:paddingRight">35.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="HeartRateSetWeekLayoutStyle2">
+        <item name="android:layout_gravity">center|left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

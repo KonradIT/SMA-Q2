@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/chat_talk_delete" android:layout_width="240.0dip" android:layout_height="120.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/delete_content" android:layout_width="fill_parent" android:layout_height="85.0dip" android:text="@string/sport_track_delete" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/delete_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/delete_submit" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/submit" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

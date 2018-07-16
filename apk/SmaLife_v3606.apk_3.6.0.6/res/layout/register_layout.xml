@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/register_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/register_header_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sma_logo" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:src="@drawable/sma_logo" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="2.0">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_country" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff353535" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/country" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffdddddd" android:id="@id/tv_chosed_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/china" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <View android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <EditText android:textSize="14.0sp" android:textColor="@android:color/white" android:textColorHint="#ffdddddd" android:id="@id/et_usertel" android:background="@null" android:paddingLeft="78.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/tel_number" android:singleLine="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="14.0sp" android:textColor="#ff353535" android:id="@id/tv_country_code" android:background="@null" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/email" android:maxLength="5" android:layout_alignLeft="@id/et_usertel" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <EditText android:textSize="14.0sp" android:textColor="@android:color/white" android:textColorHint="#ffdddddd" android:id="@id/et_password" android:background="@null" android:paddingLeft="78.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_newpsd" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff353535" android:id="@id/tv_password" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pwd" android:layout_alignLeft="@id/et_password" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <EditText android:textSize="14.0sp" android:textColor="@android:color/white" android:textColorHint="#ffdddddd" android:id="@id/et_password2" android:background="@null" android:paddingLeft="78.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_repsd" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+                <TextView android:textSize="14.0sp" android:textColor="#ff353535" android:id="@id/tv_password" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pwd" android:layout_alignLeft="@id/et_password" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="5.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pre_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                    <TextView android:textSize="14.0sp" android:id="@id/verify_icon" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/verfyCode" />
+                    <EditText android:textColor="@android:color/white" android:id="@id/vercode" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:singleLine="true" android:inputType="number" />
+                </LinearLayout>
+                <Button android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/vercode_btn" android:background="@null" android:layout_width="100.0dip" android:layout_height="45.0dip" android:text="@string/get_vercode" android:layout_toRightOf="@id/pre_day" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffdbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:textColor="@android:color/white" android:id="@id/register_btn" android:background="@drawable/register_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/register" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_dialog_hint" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/smssdk_make_sure_mobile_detail" android:lineSpacingExtra="5.0dip" />
+    <View android:background="#ff737373" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ffffffff" android:id="@id/btn_dialog_ok" android:background="@drawable/smssdk_dialog_btn_back" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:text="@string/smssdk_ok" android:layout_weight="1.0" />
+        <View android:background="#ff737373" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textColor="#ffffffff" android:id="@id/btn_dialog_cancel" android:background="@drawable/smssdk_dialog_btn_back" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginRight="1.0dip" android:text="@string/smssdk_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

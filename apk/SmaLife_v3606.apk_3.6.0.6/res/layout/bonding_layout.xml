@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/sport_title_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bond_title" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/woman_watch" android:background="@drawable/bond_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:background="@drawable/bond_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageView1" android:background="@drawable/bond_woman" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sma_woman" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/man_watch" android:background="@drawable/bond_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:id="@id/imageView2" android:background="@drawable/bond_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sma_man" android:layout_toRightOf="@id/imageView2" android:layout_centerVertical="true" />
+                <ImageView android:background="@drawable/bond_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/xiaoq_watch" android:background="@drawable/bond_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:id="@id/imageview3" android:background="@drawable/bond_xiaoq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/xiaoq" android:layout_toRightOf="@id/imageview3" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageView3" android:background="@drawable/bond_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/shouhuan" android:background="@drawable/bond_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <ImageView android:id="@id/imageview4" android:background="@drawable/bond_shouhuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/coach" android:layout_toRightOf="@id/imageview4" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imageView4" android:background="@drawable/bond_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bond_bg_normal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip">
+                <Button android:textColor="@android:color/white" android:id="@id/buy_btn" android:background="@drawable/bong_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/buy_swatch" />
+                <TextView android:textColor="@android:color/black" android:id="@id/gotoMain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/bond_later" />
+                <TextView android:textColor="@android:color/black" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="1.0dip" android:text="@string/bond_later" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

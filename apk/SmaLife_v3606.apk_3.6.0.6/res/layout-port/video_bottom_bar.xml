@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.linj.video.view.VideoPlayerView android:id="@id/videoPlayerView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/llVideoDetailPlayerBottom" android:background="@color/video_playter_bg" android:minHeight="40.0dip" style="@style/video_detail_player">
+        <ImageButton android:gravity="center_vertical" android:id="@id/btnVideoPlayOrPause" android:background="@null" android:layout_width="40.0dip" android:layout_height="fill_parent" android:src="@drawable/video_detail_player_start" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/videodetails_textsize_time" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/tvVideoPlayTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/videodetails_textsize_time" android:textColor="@android:color/white" android:id="@id/tvVideoPlayRemainTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/sbVideoDetailPlayer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" android:maxHeight="3.0dip" android:progressDrawable="@drawable/progressbar_bg" android:minHeight="3.0dip" android:thumb="@drawable/progressbar_thumb_record_mix" android:layout_toLeftOf="@id/tvVideoPlayRemainTime" android:layout_toRightOf="@id/tvVideoPlayTime" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

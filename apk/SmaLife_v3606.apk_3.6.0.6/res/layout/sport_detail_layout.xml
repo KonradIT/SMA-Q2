@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center|top" android:id="@id/header_layout" android:background="@drawable/sport_title_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageButton android:id="@id/back_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_btn_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/back_btn_style" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_title" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/btn_share" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sport_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/detail_tab_bg" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_today" android:background="@drawable/week_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today" android:layout_weight="1.0" />
+            <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_week" android:background="@drawable/today_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="@string/week_data" android:layout_weight="1.0" />
+            <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/btn_month" android:background="@drawable/tenday_btn_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/month" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.smalife.utils.LineChartView android:layout_gravity="center" android:id="@id/linechat" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/sport_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sport_aim" android:layout_weight="1.0" />
+                    <LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="18.0sp" android:textColor="@android:color/holo_blue_light" android:gravity="center" android:id="@id/aim_value" android:background="@null" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/step_unit" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/sport_line" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/journey" android:drawableLeft="@drawable/distance_icon" android:layout_weight="1.0" />
+                    <TextView android:gravity="right" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/total_steps" android:drawableLeft="@drawable/step_icon" android:layout_weight="1.0" />
+                    <TextView android:gravity="right" android:id="@id/steps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/calorie" android:drawableLeft="@drawable/calories_icon" android:layout_weight="1.0" />
+                    <TextView android:gravity="right" android:id="@id/calories" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

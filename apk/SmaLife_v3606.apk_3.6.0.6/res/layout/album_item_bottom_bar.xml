@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/common_title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/album_rooter_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/album_rooter_bar_text_size" android:textColor="@drawable/color_white_yellow" android:gravity="center" android:id="@id/edit" android:background="@color/common_title_bg" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/common_edit" android:layout_weight="1.0" />
+    <Button android:textSize="@dimen/album_rooter_bar_text_size" android:textColor="@drawable/color_white_yellow" android:gravity="center" android:id="@id/delete" android:background="@color/common_title_bg" android:layout_width="0.0dip" android:layout_height="48.0dip" android:text="@string/common_delete" android:layout_weight="1.0" />
+</LinearLayout>

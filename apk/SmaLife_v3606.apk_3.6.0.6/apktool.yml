@@ -1,0 +1,62 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: SmaLife_v3606.apk_3.6.0.6.apk
+compressionType: false
+doNotCompress:
+- arsc
+- assets/sma05_v1.6.bin
+- assets/sma05_v1.7.bin
+- png
+- res/drawable-hdpi-v4/dialog_et_bg.9.png
+- res/drawable-hdpi-v4/et_bg.9.png
+- res/drawable-hdpi-v4/focus_focus_failed.9.png
+- res/drawable-hdpi-v4/focus_focused.9.png
+- res/drawable-hdpi-v4/focus_focusing.9.png
+- res/drawable-hdpi-v4/msg_login.9.png
+- res/drawable-hdpi-v4/other_login.9.png
+- res/drawable-hdpi-v4/progress_image1.9.png
+- res/drawable-hdpi-v4/progress_image2.9.png
+- res/drawable-hdpi-v4/qq_login.9.png
+- res/drawable-hdpi-v4/rank_list_split_line.9.png
+- res/drawable-hdpi-v4/user_icon.9.png
+- res/drawable-hdpi-v4/video_detail_player_top_bg.9.png
+- res/drawable-hdpi-v4/wechat_login.9.png
+- res/drawable-hdpi-v4/weibo_login.9.png
+- res/drawable-ldpi-v4/show_head_toast_bg.9.PNG
+- res/drawable-xhdpi-v4/btn_back_nor.9.png
+- res/drawable-xhdpi-v4/edittext_back.9.png
+- res/drawable-xhdpi-v4/skyblue_editpage_bg.9.png
+- res/drawable-xhdpi-v4/skyblue_editpage_divider.9.png
+- res/drawable-xhdpi-v4/skyblue_editpage_image_bg.9.png
+- res/drawable-xhdpi-v4/skyblue_logo_sohusuishenkan.png.svntmp
+- res/drawable-xhdpi-v4/smssdk_dialog_back.9.png
+- res/drawable-xhdpi-v4/smssdk_dialog_bg.9.png
+- res/drawable-xhdpi-v4/smssdk_input_bg_focus.9.png
+- res/drawable-xhdpi-v4/smssdk_input_bg_normal.9.png
+- res/drawable-xhdpi-v4/smssdk_input_bg_special_focus.9.png
+- res/drawable-xhdpi-v4/smssdk_input_bg_special_normal.9.png
+- jpg
+- res/drawable-zh-xhdpi-v4/btn_back_nor.9.png
+- res/drawable-zh-xhdpi-v4/edittext_back.9.png
+- res/drawable-zh-xhdpi-v4/skyblue_editpage_bg.9.png
+- res/drawable-zh-xhdpi-v4/skyblue_editpage_divider.9.png
+- res/drawable-zh-xhdpi-v4/skyblue_editpage_image_bg.9.png
+- res/raw/smssdk_pydb
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '18'
+  targetSdkVersion: '22'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  bin/AndroidManifest.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.3
+versionInfo:
+  versionCode: '3606'
+  versionName: 3.6.0.6

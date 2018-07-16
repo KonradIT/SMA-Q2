@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Ask Account" />
+    <EditText android:id="@id/account" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/sender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="send_command" />
+    <Button android:id="@id/login" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="Login_command" />
+    <TextView android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="usernames" />
+    <EditText android:id="@id/usernames" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/register" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="Register_command" />
+</LinearLayout>
